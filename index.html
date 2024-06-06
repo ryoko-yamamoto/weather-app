@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today's Weather</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Today's Weather</h1>
+      <label for="lat"
+        >Enter Latitude (e.g., 35.6895 for North, -35.6895 for South):</label
+      >
+      <input type="text" id="lat" placeholder="Latitude" />
+
+      <label for="lon"
+        >Enter Longitude (e.g., 139.6917 for East, -139.6917 for West):</label
+      >
+      <input type="text" id="lon" placeholder="Longitude" />
+
+      <button onclick="getWeather()">Get Weather</button>
+
+      <div id="weather-info">
+        <h2 id="location"></h2>
+        <h2 id="weather"></h2>
+        <p id="temp"></p>
+        <p id="temp-range"></p>
+        <img
+          id="weather-image"
+          src=""
+          alt="Weather Image"
+          style="display: none; width: 100%; max-width: 300px"
+        />
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>
